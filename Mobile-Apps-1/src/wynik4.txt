@@ -1,0 +1,2 @@
+Number of numbers which first and last digit are the same: 19
+First number which meet the conditions: 93639
