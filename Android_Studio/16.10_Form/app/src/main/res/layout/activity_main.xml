@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="209dp"
+                android:layout_height="66dp">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="123dp"
+                    android:layout_height="wrap_content"
+                    android:text="Enter name:"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editTextText3"
+                    android:layout_width="285dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Your name here"
+                    android:inputType="text" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="209dp"
+                android:layout_height="93dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    tools:text="Do you agree?" />
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="74dp"
+                    android:text="Yes" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="69dp">
+
+                <EditText
+                    android:id="@+id/editTextTextEmailAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:ems="10"
+                    android:hint="Enter your email"
+                    android:inputType="textEmailAddress" />
+            </TableRow>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="351dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="290dp"
+                    android:layout_height="213dp"
+                    android:layout_marginStart="60dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:srcCompat="@android:drawable/btn_star_big_on" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <EditText
+                    android:id="@+id/editTextTextPassword"
+                    android:layout_width="228dp"
+                    android:layout_height="87dp"
+                    android:layout_marginBottom="1dp"
+                    android:ems="10"
+                    android:hint="Enter Password"
+                    android:inputType="textPassword"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/tableRow6"
+                android:layout_width="440dp"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="1dp">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="0dp"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="36dp"
+                    android:text="Confirm Password"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword2"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+
+                <EditText
+                    android:id="@+id/editTextTextPassword2"
+                    android:layout_width="221dp"
+                    android:layout_height="97dp"
+                    android:layout_marginStart="221dp"
+                    android:layout_marginBottom="1dp"
+                    android:ems="10"
+                    android:hint="confirm password"
+                    android:inputType="textPassword"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </TableLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
