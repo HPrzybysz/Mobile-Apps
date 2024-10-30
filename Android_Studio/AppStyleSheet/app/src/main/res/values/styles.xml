@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="GreenText" parent="TextAppearance.AppCompat">
+    <item name="android:textColor">#00FF00</item>
+    <item name="android:textSize">64dp</item>
+    </style>
+
+    <style name="ClockSize" parent="Widget.Material3.MaterialTimePicker.Clock">
+        <item name="android:textColor">#a83289</item>
+        <item name="android:textSize">40dp</item>
+        <item name="android:background">#96f2bb</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="android:backgroundTint">#332ded</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="TextFancy">
+        <item name="android:background">#ff2647</item>
+        <item name="android:fontFamily">@font/butcherman</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>
