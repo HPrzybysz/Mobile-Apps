@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AndroidThemes</string>
+    <string name="enter_name">Enter Name:</string>
+    <string name="name">Name</string>
+    <string name="enter_surname">Enter Surname:</string>
+    <string name="reset">Reset</string>
+    <string name="surname">Surname</string>
+    <string name="enter_email">Enter email:</string>
+    <string name="email">Email</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="there_are_only_two_options">There are only two options</string>
+    <string name="agree_to_send_your_data_to_russian_embassy">Agree to send your data to russian embassy</string>
+    <string name="send">Send</string>
+</resources>

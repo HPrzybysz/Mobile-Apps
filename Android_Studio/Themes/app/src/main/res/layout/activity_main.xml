@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/PlainTextStyle"
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:text="@string/enter_name" />
+
+        <EditText
+            style="@style/PlainFieldStyle"
+            android:id="@+id/editTextText"
+            android:layout_width="match_parent"
+            android:layout_height="77dp"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="text" />
+
+        <TextView
+            style="@style/PlainTextStyle"
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:baselineAligned="false"
+            android:text="@string/enter_surname" />
+
+        <EditText
+            style="@style/PlainFieldStyle"
+            android:id="@+id/editTextText2"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:ems="10"
+            android:hint="@string/surname"
+            android:inputType="text" />
+
+        <TextView
+            style="@style/PlainTextStyle"
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="@string/enter_email" />
+
+        <EditText
+            style="@style/PlainFieldStyle"
+            android:id="@+id/editTextText3"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="text" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="12dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="47dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/female" />
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="153dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/there_are_only_two_options" />
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/agree_to_send_your_data_to_russian_embassy" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/send" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reset" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
