@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EventListeners</string>
+    <string name="send_data">Send Data</string>
+    <string name="enter_text">Enter text</string>
+    <string name="click_me">Click me!</string>
+    <string name="enter_more_text">Enter more text</string>
+</resources>
