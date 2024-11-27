@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LoginForm</string>
+    <string name="powt_rz_has_o">Powtórz hasło</string>
+    <string name="podaj_has_o">Podaj hasło</string>
+    <string name="podaj_e_mail">Podaj e-mail</string>
+    <string name="zarwierd">Zarwierdź</string>
+</resources>
