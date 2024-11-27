@@ -1,7 +1,9 @@
 package com.example.loginform;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
 
     private EditText email1, password1, password2;
     private TextView response;
-    private Button button;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -32,19 +33,32 @@ public class MainActivity extends AppCompatActivity {
         password1 = findViewById(R.id.passwordInput);
         password2 = findViewById(R.id.confirmPasswordInput);
         response = findViewById(R.id.messageDisplay);
-        button = findViewById(R.id.submitButton);
+        Button button = findViewById(R.id.submitButton);
 
         response.setText("Autor: HPrzbysz 000000000000");
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!email1.getText().toString().contains("@")){
+                String email = email1.getText().toString().trim();
+                String password = password1.getText().toString();
+                String confirmPassword = password2.getText().toString();
+
+                if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
                     response.setText("Nieprawidłowy adres e-mail");
-                }else if(!password1.getText().toString().equals(password2.getText().toString())){
+                    response.setTextColor(getColor(R.color.errorColor));
+                } else if (!password.equals(confirmPassword)) {
                     response.setText("Hasła się różnią");
-                }else{
-                    response.setText("Witaj "+email1.getText().toString());
+                    response.setTextColor(getColor(R.color.errorColor));
+                } else if (!isPasswordValid(password)) {
+                    response.setText("Hasło musi mieć co najmniej 8 znaków, jedną dużą literę,\njedną małą literę i jedną cyfrę");
+                    response.setTextColor(getColor(R.color.errorColor));
+                } else {
+                    // Przejdź do WelcomeActivity
+                    Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
+                    intent.putExtra("email", email);
+                    startActivity(intent);
+                    finish();
                 }
             }
         });
@@ -55,4 +69,12 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
     }
+
+    private boolean isPasswordValid(String password) {
+        return password.length() >= 8 &&
+                password.matches(".*[A-Z].*") &&
+                password.matches(".*[a-z].*") &&
+                password.matches(".*\\d.*");
+    }
+
 }
