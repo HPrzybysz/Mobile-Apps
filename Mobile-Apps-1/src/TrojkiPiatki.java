@@ -3,11 +3,12 @@ import java.util.*;
 
 public class TrojkiPiatki {
 
+
     public static void main(String[] args) {
         List<Integer> liczby = new ArrayList<>();
 
         try {
-            File plik = new File("Mobile-Apps-1/src/liczby.txt");
+            File plik = new File("src/liczby.txt");
             Scanner scanner = new Scanner(plik);
 
             while (scanner.hasNextLine()) {
@@ -15,7 +16,7 @@ public class TrojkiPiatki {
             }
             scanner.close();
         } catch (FileNotFoundException e) {
-            System.out.println("Plik nie został znaleziony.");
+            System.out.println("File not found.");
             e.printStackTrace();
         }
 
@@ -42,17 +43,26 @@ public class TrojkiPiatki {
         }
 
         try {
-            FileWriter writer = new FileWriter("Mobile-Apps-1/src/trojki.txt");
+            FileWriter writer = new FileWriter("src/trojki.txt");
             for (List<Integer> trojka : dobreTrojki) {
                 writer.write(trojka.get(0) + " " + trojka.get(1) + " " + trojka.get(2) + "\n");
             }
             writer.close();
         } catch (IOException e) {
-            System.out.println("błąd zapisu");
+            System.out.println("Error occured.");
             e.printStackTrace();
         }
 
         System.out.println("Liczba dobrych trójek: " + dobreTrojki.size());
+
+        try {
+            FileWriter myWriter = new FileWriter("src/wynik4.txt");
+            myWriter.write("\n 3) Liczba dobrych trójek: " + dobreTrojki.size());
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+
     }
 
     public static int dobrePiatki(List<Integer> liczby) {
@@ -78,6 +88,21 @@ public class TrojkiPiatki {
             }
         }
 
+        try {
+            FileWriter myWriter = new FileWriter("src/wynik4.txt");
+            myWriter.write("\n Liczba dobrych piątek: " + liczbaDobrychPiatek);
+            myWriter.close();
+        } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+        }
+
         return liczbaDobrychPiatek;
+
+
+
     }
+
 }
+
+

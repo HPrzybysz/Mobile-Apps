@@ -1,2 +1,2 @@
-Number of numbers which first and last digit are the same: 18
-First number which meet the conditions: 93639
+
+ Liczba dobrych piątek: 2
