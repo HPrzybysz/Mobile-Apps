@@ -1,5 +1,7 @@
 # Mobile-Apps
 
+Zadania z Android Studio są w folderze Android_Studio
+
 | Zadanie                     | Folder                        |
 |-----------------------------|-------------------------------|
 | 18.09.2024                  | Mobile-Apps-1                 |
