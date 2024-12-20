@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <GridLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
@@ -5,6 +6,18 @@
     android:layout_height="match_parent"
     android:padding="16dp"
     android:columnCount="2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username:" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnSpan="1"
+        android:layout_gravity="fill"
+        android:inputType="text" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -34,6 +47,6 @@
         android:layout_width="379dp"
         android:layout_height="wrap_content"
         android:layout_columnSpan="2"
-        android:text="Log In" />
+        android:text="Register" />
 
 </GridLayout>
