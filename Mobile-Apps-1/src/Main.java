@@ -8,7 +8,7 @@ public class Main {
         String first_number = null;
 
         try{
-            File file = new File("src/liczby.txt");
+            File file = new File("./liczby.txt");
             Scanner scanner = new Scanner(file);
 
             while(scanner.hasNextLine()){
@@ -30,9 +30,9 @@ public class Main {
         System.out.println("First number which meet the conditions: " + first_number);
 
         try {
-            FileWriter myWriter = new FileWriter("src/wynik4.txt");
-            myWriter.write("Number of numbers which first and last digit are the same: " + counter +
-                    '\n' + "First number which meet the conditions: " + first_number);
+            FileWriter myWriter = new FileWriter("./wynik4.txt");
+            myWriter.write(" 1) \nNumber of numbers which first and last digit are the same: " + counter +
+                    '\n' + "First number which meet the conditions: " + first_number + '\n');
             myWriter.close();
         } catch (IOException e) {
             System.out.println("An error occurred.");

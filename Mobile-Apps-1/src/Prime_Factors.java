@@ -30,7 +30,7 @@ public class Prime_Factors {
         int maxUniqueFactors = 0;
 
         try{
-            File file = new File("src/liczby.txt");
+            File file = new File("./liczby.txt");
             Scanner scanner = new Scanner(file);
 
             while(scanner.hasNextLine()){
@@ -49,9 +49,19 @@ public class Prime_Factors {
                 }
             }
             scanner.close();
+
+            FileWriter myWriter = new FileWriter("./wynik4.txt", true);
+            myWriter.write("2) \n Number with the most factors: " + MostFactors + ", number of factors: " + maxFactors + '\n');
+            myWriter.write("Number with the most unique factors: " + MostUniqueFactors + ", number of unique factors: " + maxUniqueFactors + '\n');
+            myWriter.close();
+
         } catch (FileNotFoundException e) {
             System.out.println("File not found");
             e.printStackTrace();
+        }
+        catch (IOException e) {
+        System.out.println("An error occurred.");
+        e.printStackTrace();
         }
 
         System.out.println("Number with the most factors: " + MostFactors + " number of factors: " + maxFactors);

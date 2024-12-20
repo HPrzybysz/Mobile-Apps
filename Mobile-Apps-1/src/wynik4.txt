@@ -1,2 +1,11 @@
-
+ 1) 
+Number of numbers which first and last digit are the same: 18
+First number which meet the conditions: 93639
+2) 
+ Number with the most factors: 99792, number of factors: 10
+Number with the most unique factors: 62790, number of unique factors: 6
+3) 
+Liczba dobrych trójek: 27
+ Liczba dobrych piątek: 23) 
+Liczba dobrych trójek: 27
  Liczba dobrych piątek: 2

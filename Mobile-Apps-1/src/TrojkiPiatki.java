@@ -8,7 +8,7 @@ public class TrojkiPiatki {
         List<Integer> liczby = new ArrayList<>();
 
         try {
-            File plik = new File("src/liczby.txt");
+            File plik = new File("./liczby.txt");
             Scanner scanner = new Scanner(plik);
 
             while (scanner.hasNextLine()) {
@@ -43,7 +43,7 @@ public class TrojkiPiatki {
         }
 
         try {
-            FileWriter writer = new FileWriter("src/trojki.txt");
+            FileWriter writer = new FileWriter("./trojki.txt");
             for (List<Integer> trojka : dobreTrojki) {
                 writer.write(trojka.get(0) + " " + trojka.get(1) + " " + trojka.get(2) + "\n");
             }
@@ -56,8 +56,9 @@ public class TrojkiPiatki {
         System.out.println("Liczba dobrych trójek: " + dobreTrojki.size());
 
         try {
-            FileWriter myWriter = new FileWriter("src/wynik4.txt");
-            myWriter.write("\n 3) Liczba dobrych trójek: " + dobreTrojki.size());
+            FileWriter myWriter = new FileWriter("./wynik4.txt", true);
+            myWriter.write("3) \nLiczba dobrych trójek: " + dobreTrojki.size());
+            myWriter.close();
         } catch (IOException e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
@@ -89,7 +90,7 @@ public class TrojkiPiatki {
         }
 
         try {
-            FileWriter myWriter = new FileWriter("src/wynik4.txt");
+            FileWriter myWriter = new FileWriter("./wynik4.txt", true);
             myWriter.write("\n Liczba dobrych piątek: " + liczbaDobrychPiatek);
             myWriter.close();
         } catch (IOException e) {
