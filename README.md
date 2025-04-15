@@ -15,3 +15,5 @@ Zadania z Android Studio są w folderze Android_Studio
 | 20.11.2024                  | 1_Design + Functionality      |
 | 27.11.2024                  | LoginForm                     |
 | 11.12.2024                  | Fragment_1                    |
+| 05.02.2025                  | 3Activities                   |
+| 12.02.2025                  | 12.02.2025                    |
