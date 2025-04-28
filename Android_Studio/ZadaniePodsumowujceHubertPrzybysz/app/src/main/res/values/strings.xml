@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Zadanie Podsumowujące Hubert Przybysz</string>
+    <string name="fragment_1">Fragment 1</string>
+    <string name="fragment_2">Fragment 2</string>
+    <string name="Android1">Android 1</string>
+    <string name="Android2">Android 2</string>
+    <string name="Android3">Android 3</string>
+    <string name="Android4">Android 4</string>
+    <string name="open_dialog_fragment">Otwórz okno dialogowe</string>
+    <string name="adres_e_mail">Adres e-mail</string>
+    <string name="has_o">Hasło</string>
+    <string name="zaloguj_si">Zaloguj się</string>
+    <string name="wy_wietlanie_listy">Wyświetlanie listy</string>
+    <string name="zabawa_fragmentami">Zabawa fragmentami</string>
+    <string name="zmie_fragment">Zmień fragment</string>
+    <string name="poka_powiadomienie">Pokaż powiadomienie</string>
+</resources>
