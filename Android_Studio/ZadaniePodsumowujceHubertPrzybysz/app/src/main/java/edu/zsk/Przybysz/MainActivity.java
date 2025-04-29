@@ -38,27 +38,24 @@ public class MainActivity extends AppCompatActivity {
         passwordInput = findViewById(R.id.passwordInput);
         Button loginButton = findViewById(R.id.loginButton);
 
-        loginButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String email = emailInput.getText().toString();
-                String password = passwordInput.getText().toString();
+        loginButton.setOnClickListener(view -> {
+            String email = emailInput.getText().toString();
+            String password = passwordInput.getText().toString();
 
-                if (email.isEmpty() || password.isEmpty()) {
-                    Toast.makeText(MainActivity.this, "Wypełnij wszystkie pola!", Toast.LENGTH_LONG).show();
-                    return;
-                }
-
-                if (!checkCredentials(email, password)) {
-                    Toast.makeText(MainActivity.this, "Niepoprawne dane logowania!", Toast.LENGTH_LONG).show();
-                    passwordInput.setText("");
-                    return;
-                }
-
-                Toast.makeText(MainActivity.this, "Zalogowano!", Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(MainActivity.this, LoggedInActivity.class);
-                startActivity(intent);
+            if (email.isEmpty() || password.isEmpty()) {
+                Toast.makeText(MainActivity.this, "Wypełnij wszystkie pola!", Toast.LENGTH_LONG).show();
+                return;
             }
+
+            if (!checkCredentials(email, password)) {
+                Toast.makeText(MainActivity.this, "Niepoprawne dane logowania!", Toast.LENGTH_LONG).show();
+                passwordInput.setText("");
+                return;
+            }
+
+            Toast.makeText(MainActivity.this, "Zalogowano!", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(MainActivity.this, LoggedInActivity.class);
+            startActivity(intent);
         });
     }
 
