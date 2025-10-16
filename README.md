@@ -19,4 +19,5 @@ Zadania z Android Studio są w folderze Android_Studio
 | 12.02.2025                  | 12.02.2025                    |
 | Sprawdzian                  | ZadaniePodsumowujaceHubertPrzybysz |
 | 10.09.2025                  | Kosci|
-| 01.09.2025 | FontSizePicker
+| 01.09.2025 | FontSizePicker|
+| 08.10.2025 | NotesApp |
