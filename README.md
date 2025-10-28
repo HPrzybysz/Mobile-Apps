@@ -21,3 +21,4 @@ Zadania z Android Studio są w folderze Android_Studio
 | 10.09.2025                  | Kosci|
 | 01.09.2025 | FontSizePicker|
 | 08.10.2025 | NotesApp |
+| 15.10.2025 | Domek|
