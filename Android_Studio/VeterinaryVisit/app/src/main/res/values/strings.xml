@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Veterinary Visit</string>
+    <string name="vet_visit_title">Wizyta u weterynarza</string>
+    <string name="owner_name_hint">Imie i nazwisko wlasciciela …</string>
+    <string name="species_label">gatunek</string>
+    <string name="age_question">ile ma lat?</string>
+    <string name="initial_age">0</string>
+    <string name="visit_purpose_hint">cel wizyty</string>
+    <string name="appointment_time_label">godzina wizyty</string>
+    <string name="default_time">4:00 PM</string>
+    <string name="ok_button">OK</string>
+</resources>
