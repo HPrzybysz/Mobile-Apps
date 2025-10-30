@@ -117,7 +117,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
     private void collectAndDisplayFormData() {
         String ownerName = ownerNameEditText.getText().toString().trim();
         String visitPurpose = visitPurposeEditText.getText().toString().trim();
@@ -125,22 +124,31 @@ public class MainActivity extends AppCompatActivity {
         String age = ageValueTextView.getText().toString().trim();
 
         if (ownerName.isEmpty() || selectedSpecies.isEmpty() || visitPurpose.isEmpty()) {
-            showToast();
+            showAlertDialog("usupelnij dane");
             return;
         }
 
         String result = ownerName + ", " +
                 selectedSpecies + ", " +
-                age + " lat, " +
+                age + " , " +
                 visitPurpose + ", " +
                 appointmentTime;
 
-        resultTextView.setText(result);
-        resultTextView.setVisibility(View.VISIBLE);
-
+        showAlertDialog(result);
     }
 
-    private void showToast() {
-        Toast.makeText(this, "usupelnij pola", Toast.LENGTH_LONG).show();
+    private void showAlertDialog(String message) {
+        android.app.AlertDialog.Builder builder = new android.app.AlertDialog.Builder(this);
+        builder.setTitle("Wizyta u weterynarza")
+                .setMessage(message)
+                .setPositiveButton("OK", new android.content.DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(android.content.DialogInterface dialog, int which) {
+                        dialog.dismiss();
+                    }
+                })
+                .setCancelable(false)
+                .create()
+                .show();
     }
 }

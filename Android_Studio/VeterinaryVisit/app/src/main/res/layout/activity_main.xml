@@ -37,18 +37,21 @@
 
     <ListView
         android:id="@+id/speciesListView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="194dp"
         android:layout_marginTop="8dp"
         android:background="#90EE90"
         android:visibility="visible" />
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="378dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:gravity="center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="0dp">
 
         <TextView
             android:id="@+id/ageLabelTextView"
@@ -71,7 +74,7 @@
 
         <SeekBar
             android:id="@+id/ageSeekBar"
-            android:layout_width="match_parent"
+            android:layout_width="243dp"
             android:layout_height="match_parent"
             android:layout_marginTop="8dp"
             android:max="20"
@@ -91,12 +94,11 @@
 
     <EditText
         android:id="@+id/appointmentTimeEditText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/white"
+        android:ems="10"
         android:inputType="time"
-        android:padding="8dp"
-        android:text="@string/default_time" />
+        android:text="4:00PM" />
 
     <Button
         android:id="@+id/okButton"
@@ -118,7 +120,8 @@
         android:layout_marginTop="24dp"
         android:background="#90EE90"
         android:padding="16dp"
-        android:textSize="14sp"
-        android:visibility="visible" />
+        android:text="TEST TEXT"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
 
 </LinearLayout>
