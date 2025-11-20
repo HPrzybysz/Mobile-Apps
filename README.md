@@ -24,3 +24,5 @@ Zadania z Android Studio są w folderze Android_Studio
 | 15.10.2025 | Domek|
 | 22.10.2025 | VeterinaryVisit |
 | 29.10.2025 | Szyfrowanie |
+| 12.11.2025 |🟡 *in progress* 🟡 |
+| 19.11.2025 | Paczka |
